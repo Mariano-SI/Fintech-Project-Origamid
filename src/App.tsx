@@ -2,12 +2,12 @@ import Header from './Components/Header/Header';
 import SideNav from './Components/SideNav/SideNav';
 import { DataContextProvider } from './Context/DataContext';
 import Resume from './Pages/Resume/Resume';
-import './Style.css';
+import './style.css';
 
 function App() {
   return (
     <DataContextProvider>
-      <div>
+      <div className='container'>
         <SideNav/>
         <main>
           <Header/>

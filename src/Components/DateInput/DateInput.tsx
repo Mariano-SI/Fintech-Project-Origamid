@@ -1,4 +1,6 @@
 import React, { ComponentProps } from 'react'
+import { CSSProperties } from 'styled-components';
+import { DateInputStyled } from './DateInput.style';
 
 interface IDateInput extends ComponentProps<'input'> {
     label: string;
@@ -6,10 +8,10 @@ interface IDateInput extends ComponentProps<'input'> {
 
 function DateInput({label, ...props}: IDateInput) {
   return (
-    <div>
-        <label htmlFor={label}>{label}</label>
-        <input type="date" id={label} name={label} {...props}/>
-    </div>
+    <DateInputStyled>
+        <label className='generalStyle label' htmlFor={label}>{label}</label>
+        <input className='generalStyle input' type="date" id={label} name={label} {...props}/>
+    </DateInputStyled>
   )
 }
 
