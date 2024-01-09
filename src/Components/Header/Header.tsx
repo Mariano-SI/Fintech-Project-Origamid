@@ -1,10 +1,13 @@
 import React from 'react'
 import { useData } from '../../Context/DataContext'
+import DateRange from '../DateRange/DateRange'
 
 function Header() {
 
   return (
-    <div>Header</div>
+    <div>
+      <DateRange/>
+    </div>
   )
 }
 
