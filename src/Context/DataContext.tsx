@@ -1,4 +1,4 @@
-import React, { PropsWithChildren, createContext, useContext, useState } from "react";
+import React, { PropsWithChildren, createContext, useContext, useEffect, useState } from "react";
 import useFetch from "../Hooks/useFetch";
 
 interface IDataContext{
@@ -37,7 +37,7 @@ function getDate(n: number){
     date.setDate(date.getDate() - n)
     const day = String(date.getDate()).padStart(2, "0");
     const month = String(date.getMonth() + 1).padStart(2, "0");
-    const year = String(date.getFullYear()).padStart(2, "0");
+    const year = String(date.getFullYear());
     
     return `${year}-${month}-${day}`;
 }
@@ -49,6 +49,7 @@ export function DataContextProvider({children}: PropsWithChildren){
     const [final, setFinal] = useState(getDate(0));
 
     const {data, loading, error} = useFetch<IVenda[]>(`https://data.origamid.dev/vendas/?inicio=${inicio}&final=${final}`);
+   
 
     return ( 
     <DataContext.Provider value={{data, loading, error, inicio, setInicio, final, setFinal}}>
