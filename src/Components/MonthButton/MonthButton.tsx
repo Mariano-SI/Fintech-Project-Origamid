@@ -26,23 +26,19 @@ function MonthButton({number}: IMonthButton) {
         return `${year}-${month}-${day}`;
     }
 
-    function setMes(n: number){
-
+    function setMonth(n: number){
         const date = new Date();
         date.setMonth(date.getMonth() + n);
 
         const firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
         const lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
 
-
         setInicio(formatDate(firstDay));
-        setFinal(formatDate(lastDay));
-
-        
+        setFinal(formatDate(lastDay));      
     }  
 
     return (
-        <MonthButtonStyled onClick={() => setMes(number)}>
+        <MonthButtonStyled onClick={() => setMonth(number)}>
             {monthName(number)}
         </MonthButtonStyled>
     )
