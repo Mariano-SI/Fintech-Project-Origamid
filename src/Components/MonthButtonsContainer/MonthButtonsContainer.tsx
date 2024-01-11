@@ -1,11 +1,11 @@
 import React from 'react'
 import MonthButton from '../MonthButton/MonthButton'
 
-type Props = {}
 
-function MonthButtonsContainer({}: Props) {
+function MonthButtonsContainer() {
   return (
     <div className='flex'>
+        <MonthButton number={-3}/>
         <MonthButton number={-2}/>
         <MonthButton number={-1}/>
         <MonthButton number={0}/>
