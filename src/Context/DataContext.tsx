@@ -2,7 +2,7 @@ import React, { PropsWithChildren, createContext, useContext, useEffect, useStat
 import useFetch from "../Hooks/useFetch";
 
 interface IDataContext{
-    data: IVenda[] | null;
+    data: ISale[] | null;
     loading: boolean;
     error: string | null;
     inicio: string;
@@ -11,7 +11,7 @@ interface IDataContext{
     setFinal: React.Dispatch<React.SetStateAction<string>>;
 }
 
-interface IVenda{
+export interface ISale{
     id: string;
     nome:string;
     preco: number;
@@ -48,7 +48,7 @@ export function DataContextProvider({children}: PropsWithChildren){
     const [inicio, setInicio] = useState(getDate(30));
     const [final, setFinal] = useState(getDate(0));
 
-    const {data, loading, error} = useFetch<IVenda[]>(`https://data.origamid.dev/vendas/?inicio=${inicio}&final=${final}`);
+    const {data, loading, error} = useFetch<ISale[]>(`https://data.origamid.dev/vendas/?inicio=${inicio}&final=${final}`);
    
 
     return ( 

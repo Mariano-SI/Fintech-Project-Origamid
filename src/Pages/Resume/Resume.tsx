@@ -30,7 +30,7 @@ function Resume() {
             <span>{totalInProcess}</span>  
           </div>
         </div>
-        <div className='box'>
+        <div className='box mb'>
           Gráficos
         </div>
     </ResumeStyled>

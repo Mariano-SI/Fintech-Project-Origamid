@@ -8,6 +8,7 @@ html{
     --gap: 1.25rem;
 }
 body{
+    min-height: calc(100vh + 10px);
     font-family: sans-serif;
     margin: 0px;
     color: var(--color-2);
