@@ -8,7 +8,7 @@ import './style.css';
 function App() {
   return (
     <DataContextProvider>
-      <div className='container'>
+      <div className='mainContainer'>
         <SideNav/>
         <main>
           <Header/>

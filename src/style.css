@@ -15,10 +15,11 @@ body{
     background: var(--color-4);
 }
 
-.container{
+.mainContainer{
     display: grid;
     padding: var(--gap);
-    gap: var(--gap)
+    gap: var(--gap);
+    grid-template-columns: 240px auto;
 }
 
 .box{
