@@ -1,6 +1,7 @@
 import React from 'react'
 import { ResumeStyled } from './Resume.style'
 import { useData } from '../../Context/DataContext'
+import Graphics from '../../Components/Graphics/Graphics';
 
 function Resume() {
 
@@ -31,7 +32,7 @@ function Resume() {
           </div>
         </div>
         <div className='box mb'>
-          Gráficos
+          <Graphics data={data}/>
         </div>
     </ResumeStyled>
   )

@@ -12,6 +12,7 @@ export const SideNavStyled = styled.nav`
         flex: 1;
         font-size: 1.125rem;
         color: inherit;
+        margin: .25rem 0;
         color: var(--color-1);
         padding: var(--gap-s) 0;
     }
