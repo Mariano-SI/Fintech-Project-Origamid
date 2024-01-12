@@ -7,6 +7,7 @@ import configIcon from '../../assets/icons/configuracoes.svg'
 import contactIcon from '../../assets/icons/contato.svg'
 import leaveIcon from '../../assets/icons/sair.svg'
 import FintechSVG from '../../assets/FintechSVG'
+import { NavLink } from 'react-router-dom'
 
 function SideNav() {
   return (
@@ -15,11 +16,11 @@ function SideNav() {
       <ul>
         <li>
           <span><img src={resumeImage} alt="" /></span>
-          <a href="">Resumo</a>
+          <NavLink to="/">Resumo</NavLink>
         </li>
         <li>
           <span><img src={salesIcon} alt="" /></span>
-          <a href="">Vendas</a>
+          <NavLink to="/sales">Vendas</NavLink>
         </li>
         <li>
           <span><img src={webHooksIcon} alt="" /></span>
