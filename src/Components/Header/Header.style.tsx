@@ -6,4 +6,14 @@ export const HeaderStyled = styled.header`
         grid-template-columns: 1fr 1fr;
         gap: var(--gap);
     }
+
+    @media(max-width: 1000px ){
+       .dateRangeContainer{
+            grid-template-columns: 1fr ;
+        }
+
+        .dateRangeContainer *:last-child{
+            grid-row: 1;
+        }
+    }
 `

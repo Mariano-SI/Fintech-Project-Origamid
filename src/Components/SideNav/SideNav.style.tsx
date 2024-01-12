@@ -31,4 +31,15 @@ export const SideNavStyled = styled.nav`
         background: var(--color-3);
     }
 
+     @media(max-width: 700px ){
+       ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       }
+
+       li a{
+        font-size: .875rem;
+       }
+    }
+
 `

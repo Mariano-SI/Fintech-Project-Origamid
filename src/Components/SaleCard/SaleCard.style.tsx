@@ -16,4 +16,12 @@ export const SaleCardStyled = styled.div`
     .salePrice{
         justify-self: end;
     }
+
+     @media(max-width: 700px ){
+      grid-template-columns: 1fr;
+
+      div:last-child{
+        justify-self: start;
+      }
+    }
 `

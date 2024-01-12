@@ -11,4 +11,10 @@ export const ResumeStyled = styled.section`
         margin-bottom: var(--gap);
         color: var(--color-1);
     }
+
+    @media(max-width: 1000px ){
+        .resumeContainer{
+            flex-direction: column;
+        }
+    }
 `
