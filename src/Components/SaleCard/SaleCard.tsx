@@ -1,13 +1,14 @@
 import React from 'react'
 import { ISale } from '../../Context/DataContext'
 import { SaleCardStyled } from './SaleCard.style'
+import { NavLink } from 'react-router-dom';
 
 const SaleCard = ({sale}: {sale: ISale}) => {
 
-    const {id, nome, preco} = sale;
+  const {id, nome, preco} = sale;
   return (
     <SaleCardStyled className='box'>
-        <a href="" className='saleCardLink'>{id}</a>
+        <NavLink className='saleCardLink' to={`/sales/${sale.id}`}>{id}</NavLink>
         <div>
             {nome}
         </div>
