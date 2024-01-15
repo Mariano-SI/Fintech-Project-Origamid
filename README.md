@@ -1,30 +1,36 @@
-# React + TypeScript + Vite
+# Projeto Fintech
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
+Fintech é um projeto criado durante o curso de React com Typescript da Origamid. O objetivo do projeto é simular uma fintech enquanto pratico meus aprendizados de React e typescript.
 
-Currently, two official plugins are available:
+## Bibliotecas utilizadas
+- Styled Components
+- React Router Dom
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Como rodar o projeto
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1. Clone o projeto:
+```
+git clone https://github.com/seuusuario/fintech.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Instale as dependências:
+```
+npm install
+```
+
+3. Inicie o servidor:
+```
+npm start
+```
+
+Após seguir esses passos, o projeto estará rodando na porta 3000 do seu localhost (http://localhost:3000).
+
+## Imagens do Projeto
+
+### Página de Resumo
+![Página de Resumo](url-da-imagem)
+
+### Página de Vendas
+![Página de Vendas](url-da-imagem)
+
