@@ -29,8 +29,8 @@ Após seguir esses passos, o projeto estará rodando na porta 3000 do seu localh
 ## Imagens do Projeto
 
 ### Página de Resumo
-![Página de Resumo](url-da-imagem)
+![Página de Resumo](https://github.com/Mariano-SI/Fintech-Project-Origamid/blob/master/src/assets/fintech1.png?raw=true)
 
 ### Página de Vendas
-![Página de Vendas](url-da-imagem)
+![Página de Vendas](https://github.com/Mariano-SI/Fintech-Project-Origamid/blob/master/src/assets/Fintech2.png?raw=true)
 
